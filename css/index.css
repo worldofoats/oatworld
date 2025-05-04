@@ -1,0 +1,99 @@
+nav {
+  
+  /* width: 1160px; */
+  /* width: 1040px; */
+  margin: center center center center;
+  padding: 10px 10px;
+  
+  max-height:32px;
+  height:32px;
+
+  font-family: alagard;
+  font-size: 32px;
+
+  
+  text-align: center;
+  /* background-image: url(images/backgrounds/movement.gif); 
+  background-blend-mode: color-burn;
+  background-color: var(--secondary); */
+}
+
+.nav {
+  margin-left: 0px;
+  padding: 0;
+  border: dotted;
+  align-content: right;
+}
+.nav li {
+  display:inline-block;
+  padding-left:28px;
+  padding-right:28px;
+}
+.nav li a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.nav-dark {
+  filter: brightness(70%);
+}
+
+.nav-chosen {
+  text-decoration: var(--primary) underline !important;
+}
+
+.nav-inactive {
+  filter: brightness(60%);
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+  }
+
+.bigBox {
+min-width: 1850px;
+min-height: 900px;
+border: dotted;
+margin-top: 20px;
+align-self:center;
+}
+
+.leftPanel {
+display: inline-block;
+
+min-width: 100px;
+min-height: 800px;
+margin: 50px;
+border: dotted;
+}
+
+.mainPanel {
+display: inline-block;
+ 
+border: dotted;
+min-width: 1275px;
+min-height: 800px;
+height:max-content;
+margin: -1000px 50px 0px 100px;
+}
+
+.rightPanel {
+display: inline-block;
+padding: 25px;
+border: dotted;
+width: 100px;
+height: 800px;
+}
+
+  body {
+    background-color: #401e6a;
+    color: #eee;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+  
