@@ -2,7 +2,7 @@ nav {
   
   /* width: 1160px; */
   /* width: 1040px; */
-  margin: center center center center;
+  margin: 0px 20px 20px 20px;
   padding: 10px 10px;
   
   max-height:32px;
@@ -38,13 +38,6 @@ nav {
   filter: brightness(70%);
 }
 
-.nav-chosen {
-  text-decoration: var(--primary) underline !important;
-}
-
-.nav-inactive {
-  filter: brightness(60%);
-}
 
 
 ul {
@@ -55,42 +48,66 @@ ul {
     display: inline-block;
   }
 
+
+.row{
+  height: 150;
+  vertical-align: middle;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+}
+.row h1{
+  align-self: center;
+}
+
 .bigBox {
-min-width: 1850px;
-min-height: 900px;
+width: 100%;
+min-height: 100%;
+
+margin: 55px 0px 0px 0px;
+
 border: dotted;
-margin-top: 20px;
 align-self:center;
 }
 
 .leftPanel {
-display: inline-block;
+  display: inline-block;
 
-min-width: 100px;
-min-height: 800px;
-margin: 50px;
-border: dotted;
+  width: 10%;
+  height: 90%;
+  
+  margin: 25px;
+  padding: 25px;
+  
+  border: dotted;
 }
 
 .mainPanel {
 display: inline-block;
- 
+
+width: 60%;
+height: 90%;
+
+margin: 25px;
+padding: 25px;
+
+
 border: dotted;
-min-width: 1275px;
-min-height: 800px;
-height:max-content;
-margin: -1000px 50px 0px 100px;
 }
 
 .rightPanel {
 display: inline-block;
+
+width: 10%;
+height: 90%;
+
+margin: 25px;
 padding: 25px;
+
 border: dotted;
-width: 100px;
-height: 800px;
 }
 
-  body {
+body {
     background-color: #401e6a;
     color: #eee;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
