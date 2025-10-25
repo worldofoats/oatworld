@@ -18,16 +18,22 @@ nav {
   background-color: var(--secondary); */
 }
 
+
+
 .nav {
   margin-left: 0px;
   padding: 0;
-  border: dotted;
-  align-content: right;
+
+  align-content: center;
+
+
+
 }
 .nav li {
   display:inline-block;
-  padding-left:28px;
-  padding-right:28px;
+
+ /* padding-left:28px;
+padding-right:28px; */
 }
 .nav li a {
   color: var(--primary);
@@ -55,6 +61,7 @@ ul {
   text-align: center;
   align-self: center;
   align-content: center;
+  
 }
 .row h1{
   align-self: center;
@@ -113,4 +120,12 @@ body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
 
-  
+  @media screen and (max-width: 800px){
+    .nav{
+      flex-direction: column;
+    }
+  }
+
+  /*To do : make the navbar instead hust a div class with lots of links?
+   and turn the main box into a flexbox?
+   Debating how I want mobile to look

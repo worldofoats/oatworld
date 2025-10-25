@@ -1,0 +1,117 @@
+
+.intheheader {
+    height: 150px;
+    align-content: center;
+    text-align: center;
+}
+
+
+
+
+body {
+    background-color: #1e1138;
+    color: #eee;
+    height: 100%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+
+
+.navbar {
+    justify-content: center;
+    display: flex;
+
+}
+
+nav {
+    background-color: pink;
+    border: solid;
+    border-radius: 5px;
+    border-color: pink;
+    margin-bottom: 25px;
+  
+}
+
+li {
+    display: inline;
+    color: darkmagenta;
+    
+}
+li a {
+    text-align: center;
+    padding:   10px;
+    text-decoration: none;
+   
+
+}
+
+.navbar a {
+    color: darkmagenta;
+}
+
+
+.mainflex {
+display: flex;
+flex-direction: row;
+width: 100%;
+min-height: 100%;
+align-self: center;
+
+border: solid;
+justify-content:left;
+justify-items:left;
+
+}
+
+
+.boxof88x31 {
+    display:grid;
+   grid-template-columns: auto auto;
+    /*margin-top: 500;
+    margin-left:-130px;*/
+    align-self:center;
+    width:176px;
+    margin: 12px;
+    
+}
+.boxof88x31 div{
+    height:31px;
+    width:88px;
+}
+.box88 {
+    width: 88px;
+    height: 31px;
+}
+.leftPanel {
+    background-color: #401e6a;
+    margin: 10px;
+    justify-items: center;
+    min-height: 100%;
+    width: 200px;
+    border: dotted;
+}
+.leftPanel #readTitle {
+    justify-content: center;
+}
+.mainPanel {
+    background-color: #401e6a;
+    margin: 10px;
+    padding-left: 10px;
+    display: inline-flex;
+    min-height: 100%;
+    width: calc(100% - 280px);
+    border: dotted;
+}
+.rightPanel {
+    margin: 10px;
+    text-align: justify;
+    display: inline-flex;
+    height: 100%;
+    width: 12%;
+    flex-grow:1;
+    border: dotted;
+}
+.bottomflex {
+    background-color: #401e6a;
+    display: flex;
+    flex-direction: column;
+}
