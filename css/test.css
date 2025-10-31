@@ -88,6 +88,7 @@ justify-items:left;
     min-height: 100%;
     width: 200px;
     border: dotted;
+    text-align: center;
 }
 .leftPanel #readTitle {
     justify-content: center;
@@ -96,10 +97,15 @@ justify-items:left;
     background-color: #401e6a;
     margin: 10px;
     padding-left: 10px;
-    display: inline-flex;
     min-height: 100%;
     width: calc(100% - 280px);
     border: dotted;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+.mainPanel a {
+    color: wheat;
 }
 .rightPanel {
     margin: 10px;
@@ -115,3 +121,28 @@ justify-items:left;
     display: flex;
     flex-direction: column;
 }
+.albumGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:5px;
+    background-color: #1e1138;
+    margin: 10px;
+    padding: 5px;
+    margin-top:20px;
+    margin-bottom: 20px;
+ }
+ .albumCover {
+    grid-row: span 4;
+ }
+ .albumCover img{
+    width: 240px;
+    height: 240px;
+    
+ }
+ .albumDesc {
+    grid-column: span 2;
+ }
+ .artofMe {
+    width: 60%;
+    height: 60%;
+ }
