@@ -142,7 +142,7 @@ justify-items:left;
  .albumDesc {
     grid-column: span 2;
  }
- .artofMe {
-    width: 60%;
-    height: 60%;
+ .artofMe img {
+    width: 50%;
+    
  }
