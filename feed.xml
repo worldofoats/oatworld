@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+  <title>RSS feed for oats.world </title>
+  <description>Come follow along for updates in my ever expanding world !</description>
+  <language>en-us</language>
+  <link>https://oats.world</link>
+  <lastBuildDate>
+    Sat, 15 Nov 2025 04:24:06 -0500
+  </lastBuildDate>
+  <ttl>1763216646</ttl> <!-- Grab time stamp-->
+
+  <item>
+    <title>Some New Album Recs</title>
+    <description>
+    Eusexua
+FKA Twigs
+Favorite Song Childlike Things
+Song that Grew on me: 24hr Dog
+I am surprised I haven't heard of FKA Twigs till recently, because i can't help myself from coming back to this album again and again and again!  My friend put me on this on the way to the club, listening to 'Girl feels Good' and ever since then my head has been filled with more twigs than a typical faggot. 
+
+ Go ahead and listen to this one if you're a fan of anything electronic and wanna bounce between feeling hit by a truck with emotions and going for a fun night at the club , this is the album for you.
+
+EDIT: as of today 11/14/25 when i post this, FKA Twigs JUST released a new album, eusexua afterglow, which coinsides with her previous techno-pop album eusexua. will give that a listen.
+
+
+<br><br>
+JUNGLE WITCH
+Vertigoaway
+ Fav Song: The Jungle Witch
+ Song That Grew on me: The Unhexening
+ This may be the epitome of 'jungle' to me. It is stuck in my head mercilessly, and i feel trapped in its atmospheric rhythm -- the witch herself has commanded me like a puppet on a string to 'unce unce  unce' my head to the rhythm and close my eyes to imagine its world.
+ 
+  There is never a bad day or a bad time for these digital vibrations to come to life and seranade my ears, and yet i haven't delved into much of vertigoaway's other projects as of yet, it's as though this one will keep me close and make sure i sing its praises for all of time. Someone save me.
+    </description>
+    <link>https://oats.world/recs.html</link>
+    <pubDate>
+    Sat, 15 Nov 2025 04:24:06 -0500
+    </pubDate>
+    <guid> https://oats.world/recs.html </guid>
+  </item>
+
+  <!-- 
+  <item>
+    <title></title>
+    <description>
+    
+    </description>
+    <link></link>
+    <pubDate>
+    has to be RFC 2822 format , https://www.bairesdev.com/tools/onlinedevtools/
+    </pubdate>
+    <guid> just paste the link you posted in link </guid>
+  </item>
+  -->
+
+
+</channel>
+</rss>

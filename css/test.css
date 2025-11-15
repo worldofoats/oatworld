@@ -124,7 +124,6 @@ justify-items:left;
 .albumGrid {
     display: grid;
     grid-template-columns: auto auto;
-    gap:5px;
     background-color: #1e1138;
     margin: 10px;
     padding: 5px;
@@ -135,8 +134,10 @@ justify-items:left;
     grid-row: span 4;
  }
  .albumCover img{
-    width: 240px;
-    height: 240px;
+    min-width: 30%;
+    max-width: 70%;
+    min-height: 30%;
+    max-height: 70%;
     
  }
  .albumDesc {
@@ -145,4 +146,22 @@ justify-items:left;
  .artofMe img {
     width: 50%;
     
+ }
+
+ .friendGrid {
+    display:grid;
+    grid-template-columns: auto auto; 
+    justify-content: center;
+    
+
+ }
+ .individualFriend {
+    background-color: #1e1138;
+    border: dotted;
+    margin: 5px;
+ }
+ 
+ .friendPhoto img {
+    max-width: 25%;
+    max-height: 25%;
  }
