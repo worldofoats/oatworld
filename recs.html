@@ -43,14 +43,31 @@
             break;
             default:window.open('https://sadgirlsclub.wtf/')
           }
+        }
+
+        function albumGoto(x) {
+          window.location = "/recs.html#"+x
+         //window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#myAnchor"
+         /* switch(x) {
+            case 'shelter': open('#shelter')
+            break;
+            case 'escape from blue marble':
+            break;
+            case 'eusexua': 
+            break;
+            case 'unicorns are real': 
+            break;
+            case 'constant companions': 
+            break; */
           }
+        
       </script>
     </head>
     <body>
 
     <header><!--
         <img src="/images/div/pentacle.gif" class="img-center" width="500" style="margin-bottom: -40px;">  this top image-->
-        <div class="intheheader">
+        <div class="intheheader" id = topper>
           <h1> Welcome to the World of Oats!</h1>
           
         </div> <!--
@@ -114,17 +131,26 @@
         <p id = readTitle> The Devils (~40%)</p>
 
         <h4>Latest Update:</h4>
-        <a href="/recs.html"><p> New Recs: Unicorns Are Real , and Constant Companions!</p></a>
-        <p> Plus Mobile Viewing actually works now!</p>
+        <a href="/blogs/expandweb.html"><p> New Blog: Expand the Web, Make Your Own Space</p></a>
+        <p>  Plus <a href = "/recs.html">Album recs</a> is a lot easier to navigate! </p>
         <h4> Updated:</h4>
-        <p> January 31, 2026</p>
+        <p> Febrary 22nd, 2026</p>
       </div>
 
         <div class = "mainPanel">
-          <p>This is where I will show off all the media I think you should take a look at! <br>Though right now it will mainly be albums I think you should listen to! </p>
+          <p>This is where I will show off all the media I think you should take a look at! <br>Though right now it will mainly be albums I think you should listen to! <br><br>click on an album cover to go directly to that rec! </p>
 
+          <div class = albumsflex>
+            <div class = albumcov onclick ="albumGoto('shelter')"><img src = "/art/albums/Shelter.jpg"></div>
+            <div class = albumcov onclick ="albumGoto('escape-from-blue-marble')"><img src = "/art/albums/EscapeFromBlueMarble.png"> </div>
+            <div class = albumcov onclick ="albumGoto('jungle-witch')"><img src = "/art/albums/Jungle Witch.jpg"> </div>
+            <div class = albumcov onclick ="albumGoto('eusexua')"><img src = "/art/albums/eusexua.jpg"> </div>
+            <div class = albumcov onclick ="albumGoto('unicorns-are-real')"><img src = "/art/albums/UnicornsAreReal.png"> </div>
+            <div class = albumcov onclick ="albumGoto('constant-companions')"><img src = "/art/albums/ConstantCompanions.png"> </div>
 
-        <div class = albumGrid>
+          </div>
+
+        <div class = albumGrid id ="constant-companions">
             <div class = albumCover><img src = "/art/albums/ConstantCompanions.png"></div>
             <div class = albumName><h2>Constant Companions (Deluxe)</h2> </div>
             <div class = albumArtist><h3>Jamie Paige</h3> </div>
@@ -137,7 +163,10 @@ Birdbrain was the chicken feed that led me into the coop of this album, also tha
  Jamie has a wonderful way of writing melodies in and out of each other, remixing them like leitmotifs to appear everywhere in this album and each song goes from a wonderful high to a devasting low, getting me to cry to songs like Clouddrop. It's an album of want, fame, desire, love, hopes, what it feels to want to be someone's other and seeing that want fall apart. All of these can and will hurt. You can become a shell of yourself or you can be a ray of hope and light with how you and your companions treat each other and treat yourselves (and the reality is, you will have been both by the end of the timeline).</p> </div>
           </div>          
 
-        <div class = albumGrid>
+          <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+
+        <div class = albumGrid id = "unicorns-are-real">
+
             <div class = albumCover><img src = "/art/albums/UnicornsAreReal.png"></div>
             <div class = albumName><h2>UNICORNS ARE REAL</h2> </div>
             <div class = albumArtist><h3>NEK0BABY</h3> </div>
@@ -148,8 +177,9 @@ Birdbrain was the chicken feed that led me into the coop of this album, also tha
 In the best way possible, it almost feels like a video game OST for a visual novel that would change my life -- not all chilltronic music has this quality so I don't want you to misunderstand this as 'chill = background = soundtrack for something' logic; this is a living breathing organism. There's a story to this album I always think about, and one that makes me go 'but what if i really did just see a unicorn while I'm out and about trailing'. There's many mystical things where we live and taking a path less traveled usually allows you to see them, but with this album on its much easier to look for them -- and I think if you go out on a barely-suitable-for-humans trail next time with this album on, I think you'll find your own unicorn too.</p> </div>
           </div>
 
+          <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
 
-          <div class = albumGrid>
+          <div class = albumGrid id = "eusexua">
             <div class = albumCover><img src = "art/albums/eusexua.jpg"></div>
             <div class = albumName><h2>Eusexua</h2> </div>
             <div class = albumArtist><h3>FKA Twigs</h3> </div>
@@ -157,12 +187,13 @@ In the best way possible, it almost feels like a video game OST for a visual nov
             <div class = albumGrew> <p>Song that Grew on me: 24hr Dog</p></div>
             <div class = albumDesc> <p>I am surprised I haven't heard of FKA Twigs till recently, because i can't help myself from coming back to this album again and again and again!  My friend put me on this on the way to the club, listening to 'Girl feels Good' and ever since then my head has been filled with more twigs than a typical faggot.  <br><br>Go ahead and listen to this one if you're a fan of anything electronic and wanna bounce between feeling hit by a truck with emotions and going for a fun night at the club , this is the album for you.<br><br>
 
-EDIT: as of today 11/14/25 when i post this, FKA Twigs JUST released a new album, eusexua afterglow, which coinsides with her previous techno-pop album eusexua. will give that a listen.
-</p> </div>
+            EDIT: as of today 11/14/25 when i post this, FKA Twigs JUST released a new album, eusexua afterglow, which coinsides with her previous techno-pop album eusexua. will give that a listen.
+            </p> </div>
           </div>
 
+        <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
 
-<div class = albumGrid>
+<div class = albumGrid id = 'jungle-witch'>
             <div class = albumCover><img src = "art/albums/Jungle Witch.jpg"></div>
             <div class = albumName><h2>JUNGLE WITCH</h2> </div>
             <div class = albumArtist><h3>vertigoaway</h3> </div>
@@ -171,7 +202,9 @@ EDIT: as of today 11/14/25 when i post this, FKA Twigs JUST released a new album
             <div class = albumDesc> <p> This may be the epitome of 'jungle' to me. It is stuck in my head mercilessly, and i feel trapped in its atmospheric rhythm -- the witch herself has commanded me like a puppet on a string to 'unce unce  unce' my head to the rhythm and close my eyes to imagine its world. <br><br>There is never a bad day or a bad time for these digital vibrations to come to life and seranade my ears, and yet i haven't delved into much of vertigoaway's other projects as of yet, it's as though this one will keep me close and make sure i sing only its praises for all of time. Someone save me. </p> </div>
           </div>
 
-          <div class = albumGrid>
+          <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+
+          <div class = albumGrid id = 'escape-from-blue-marble'>
             <div class = albumCover><img src = "/art/albums/EscapeFromBlueMarble.png"></div> 
             <div class = albumName><h2> The Escape from Blue Marble </h2> </div>
             <div class = albumArtist><h3> Strxwberrymilk</h3> </div>
@@ -181,7 +214,10 @@ EDIT: as of today 11/14/25 when i post this, FKA Twigs JUST released a new album
 With that being said however, I never listened to much of the album until very recently when I saw the album was name your price in bandcamp. I also had God Hates Strawberries in my playlist, so when i realized those two were in the same album I knew I had to send some bucks my way and listen.<br><br> I ended up falling in love with this album, it's like a subtly sweet drink i know i can always have and fall back into. Seeing the story line from going from Earth to Escaping on Pluto felt so nice. Let's get loose, and enjoy. Don't get in your head, make your music, and and most of all vibe, because you never know how far you're gonna get until you try.</p>
           </div>
         </div>
-          <div class = albumGrid>
+           
+        <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+
+          <div class = albumGrid id = 'shelter'>
             <div class = albumCover><img src = "/art/albums/Shelter.jpg"></div> 
             <div class = albumName><h2>Shelter</h2> </div>
             <div class = albumArtist><h3>Alice Phoebe Lou</h3> </div>
@@ -190,6 +226,7 @@ With that being said however, I never listened to much of the album until very r
             <div class = albumDesc> <p>Alice Phoebe Lou Means a lot to me ever since listening to Paper Castles back in 2023, and this album always sends me back to a time of Requited love and sensitive losses.<br><br> It stilts me to a place outside of the typical timeline where i can see my past and future selves, and the love of the people around me and the pieces of me I gave away. I can feel the current warmth of my lover's embrace when I listen to Shine, the Pain of the past me when i used to Open My Door to anyone, the wisdom of my future self when i listen to My Girl.<br><br>
 Highly recommend, and i think you'll find yourself wanting to recommend this to others around you as well. </p> </div>
           </div>
+          <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
 
           <!-- album template
           <div class = albumGrid>

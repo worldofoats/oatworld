@@ -6,11 +6,76 @@
   <language>en-us</language>
   <link>https://oats.world</link>
   <lastBuildDate>
-    Sun, 18 Jan 2026 15:30:54 +0000
+    Mon, 23 Feb 2026 00:01:56 +0000
   </lastBuildDate>
-  <ttl>1768750254</ttl> <!-- Grab time stamp-->
+  <ttl>1771804916</ttl> <!-- Grab time stamp-->
+
+ <item>
+    <title>New Blog: Expand the Web, Make Your Own Space</title>
+    <description>
+    <p>
+    <a href = "https://www.statista.com/chart/19058/number-of-websites-online/" target ="_blank">  According to Statistsa,</a> there was over 1.8 billion websites online back in 2021. 1.8 billion of those http://www dot somethings that were active for people to go to, yet, nowadays it feels like most people use the same 5 websites the whole day! Most people got between 5-10 in their rotation, and thats if i include apps that use api calls to their website in the background, because if i didn't include apps the number would be smaller. <br></br>
+<ul>
+<li> Your search engine of choice (google, duckduckgo, etc) </li>
+<li> your maps of choice (google maps, apple maps, etc) </li>
+<li> One for mainly chatting (i.e discord, teams/slack if at work) </li>
+<li>a couple social medias / entertainment ones (your insta's, facebook) </li>
+<li> Maybe Twitter or its alternatives such as bluesky, mastadon </li>
+<li> Youtube, Twitch, or however you prefer your long term content (netflix, nebula...vimeo???) </li> 
+<li> Your bank and financial websites/apps </li> 
+</ul>
+And for the vast majority of people, that's all they'll explore. But even if i'm being generous and saying that's 15 websites they use, That is still less than 0.001% of what the internet has to offer. But when you explore such a tiny fragment on the web, it's easy to think it is dying; even more so to think it's not worth the effort to make it expand. That's unfortunately what the big ones up top want us to think and do! The more they can take us from using this big global resource in any way you want, you have to play their game, with their rules, and their restrictions, their surveillance, all so they can get either your data, or your mind. <br></br>
+
+It's no secret that the algorithm can be used to push someone into an idealogy or pipeline. They want your attention, for you to be on them longer, and for you to spill out everything you can by pushing you into more reactionary content on whatever pipeline you rode in on. They are, like all corporations tend to be in capitalism if you're trying to 'win the game', a bloodsucking vampire trying to lure you in and once you're there, bleed you till you're nothing more but a blood bag they can sip on as soon as your marrow makes more. It's also why they're gonna push toward even more wearables -- their best customers are already on their phone 8+ hours a day watching ad between ad between video-disguised-as-an-ad between ad again, it's hard to get much more from them unless they can find a way to cohesively plug more ways to get their attention during their day to day lives and gain more and more info out of you! <br></br>
+
+But we don't have to play on their fields. We need to expand our web. <br></br>
+
+Now, I will admit, if you talk to a lot of people who still like making their own spaces, a vast majority of them, such as me, still use stuff like instagram (and discord, don't get me started on this IPO and facial recognition) in order to easily see events. A lot of places like the booking/event companies in your local area or local businesses just don't have their own site anymore. It's all 'look at insta or facebook for our events!' Which makes it really hard to have social life in the realm grass lives without having the IG or facebook or etc. Unfortunately, individual fragmenting out of the services will make it hard for things to change. Which is why I'm asking you to head out in groups, and to encourage your local venues, businesses, booking/event companies, and friends to help move together. <br></br>
+
+No one wants to go brainrot for 12 hours on a saturday, but it is easy, and free. I can't promise making your own space on the internet is either of the two, but it can be free and it can be as simple as you want or if you get the drive it can be a bit harder but much more satisfying, i promise you. There are free sites like neocities to host your website, or github pages, which allow you to use html, css, javascript, which will be MUCH more than enough simple blogs, event updates,and more. Anything besides sales i think should be fine with this. If you don't know how to make a website, check out <a href = "https://www.youtube.com/watch?v=9z8FP8ear2Y" target ="_blank">youtube tutorials</a> and <a href = "https://www.w3schools.com/css/default.asp" target ="_blank"> W3schools!
+
+</a> (also if you need download a coding development program, try vscodium! It's like visual studio code but better cause it is the open source fork of the microsoft vscode. )  If you really wanna spin up something fast, there are website builders like squarespace, wix, and wordpress, but I personally think it's better to make your own or if you really don't have time and you're a company -- have someone make it for you. If you really wanna get technical, you can use VPS's (virtual private servers) or selfhost (you may wanna check if your Internet Provider allows this) with something like cloudflare for DDoS protections and hosting a container on docker of your webserver. <br></br>
+
+The last thing that I implore everyone to have on their website is an RSS Feed. If you haven't seen this orange wi-fi lookin symbol before, take a look at the side panel on my site that has 'feed'! It's genuinely one of the coolest things i think happened to the web. Whenever you have an update to your site, you can put that update in an item in an rss feed, and then everyone who follows your rss feed will be notified of said update. Isn't that awesome? There are many RSS Clients, though i will say it's a lot slimmer pickings on mobile (though some email clients like thunderbird will also integrate your rss feed there). With this, you can essentially 'follow' any website and be notified of updates, without having to manually check the website each time. I really don't think there's any reason for your site to NOT have one, unless it is a static site that will never update. It makes traversing this web much easier. <br></br>
+<img class = "box88" src = "/art/global/88x31/feed.gif"> </img>
+Additionally, some bigger sites you likely already use have rss feeds built into them, which means you can get properly notified whenever something updates! <br></br>
+For Example: <br></br>
+<ul>
+<li>Tumblr has it natively built in! If you wanna get notified whenever pukicho makes a post and be able to read the post in your rss reader, you can just do <a href ="https://pukicho.tumblr.com/rss" target = "_blank"> pukicho.tumblr.com/rss ! </a> Depending on the reader you may just have to add that url when pressing an 'add feed' button of some kind on your rss client, but it will work! </li>
+<li>Youtube also natively has it built in! If lets say, you love Leadhead and want a notification when she uploads (which unlike youtube, this will actually notify you 100% of the time) , you can get it from the channel ID  (<a href = "https://chuck.is/yt-rss/" target="_blank">thanks chuck!</a>) . As the post says, get to their youtube channel page (<a href = "https://www.youtube.com/@Leadhead/" target="_blank">  https://www.youtube.com/@Leadhead/ </a>
+  ) right click and view page source, search up 'channel_id=' and voila! you got the link needed to add it as an rss feed. <br></br> The bonus of wathing youtube in your RSS feed is that so far i've gotten no ads while doing so, which makes it a great way to work around that. hat being said though, if they are a small creator, you may want to see about supporting them in other ways if not giving them ad revenue. </li>
+<li>Ao3 has rss feeds ! If idk you're a big fan of works that lets say are in the 'cult of the lamb' fandom, with tags 'narinder' and 'fluff', you can make that filter, and near the top right of the page will be an 'rss feed' button that allows you to essentially subscribe and be notified anytime a fic with those tags are made / is updated! Really useful to yall who are obsessed with certain blorbos or types of fics. </li>
+<li>Plus many other websites if you search up 'rss' and that website or check out <a href = "https://openrss.org/feeds" target="_blank"> https://openrss.org/feeds </a> ! reddit, bluesky, nebula, and more! </li>
+</ul>
+<br></br>
+
+Last but not least, if you're looking to find new places of the web you haven't seen, I really recommend 3 things -- <a href = "https://neocities.org/browse" target="_blank"> https://neocities.org/browse </a> , <a href = "https://marginalia-search.com/" target="_blank"> https://marginalia-search.com/ </a> , and <a href = "https://brisray.com/web/webring-list.htm" target = "_blank"> https://brisray.com/web/webring-list.htm </a>. <br></br>
+
+Marginalia is a search website similar to google, but it uses low web sites which allow you to sites you never would've dreamed about seein on google. You can sort by blogs, wikis, whether or not there's JS, etc etc. I find it really useful when trying to find either more information i actually know was made by a human, or something of a more esoteric flare. It also has an /explore feature similar to neocities which makes it really nice to go around and see what people have made outside of neocities! <br></br>
+
+Webrings are connected sites that either share an ideology or theme to them, such as 'people who live in portland' to 'queer artists' to 'just really like this one character'. Because each site in a webring link to another, it's really easy to explore other websites that might  have something similar to them! Brisray has a site with a webring list surpassing 500 right now.  you can easily scroll through and see if there's any up your alley, either to explore or to eventually join! <br></br>
+
+Whether you choose to flex your creative talents, workout that muscle of learning a new skill, or just at least find a better way to browse your time by going through different websites and setting up an rss feed, i hope this gives you all a starting point on what you should do. I'd love if everyone who is a regular of my world can expand what their Internet is and find a igger creative endeavour to it than they thought might've been possible. You got this!<br></br>
 
 
+Inspirations:
+<ul>
+<li>3BSkyen's  <a href = "https://www.youtube.com/watch?v=XxH43HcgNuw" target ="_blank"> "There's a better way to browse the internet that you (probably) don't know about"</a></li>
+<li> Green hoodie cat's <a href = "https://www.youtube.com/watch?v=lXDak-kmdeU" target ="_blank"> "The COOLER Internet" </a> </li>
+<li onclick = "buttonGoto('psychool')" class = "topper" > Psychool's Personal Web Map Guide:  </li>
+<li> Marighoul's <a href = "https://www.youtube.com/watch?v=Tv223kX0SRg" target ="_blank">"The Rise of the Indie Web Movement" </a> </li>
+<li> <a href = "https://www.w3schools.com/css/default.asp" target ="_blank"> W3schools</a> who without their guides this site wouldn't be possible </li>
+<li> <a href = "/friends.html"> My friends</a> in the digital realm who encouraged me to use my creativity </li>
+</ul>
+<br></br>
+</p>
+    </description>
+    <link>https://oats.world/blogs/expandweb.html</link>
+    <pubDate>
+    Mon, 23 Feb 2026 00:01:56 +0000
+    </pubDate>
+    <guid>https://oats.world/blogs/expandweb.html</guid>
+  </item>
 
   <item>
     <title>New Album Recs: Unicorns Are Real, and Constant Companions</title>
