@@ -4,7 +4,7 @@
     <meta name="description" content="~ All About oats ~">
     <meta property="og:url" content="https://oats.world/aboutme.html">
   
-    <link href="/css/index.css?v=1.3" type="text/css" rel="stylesheet">
+    <link href="css/test.css?v=1.3" type="text/css" rel="stylesheet">
   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
@@ -16,11 +16,13 @@
   
     <title>The World Of Oats!</title>
     <link rel="icon" type="image/x-icon" href="/art/global/favicon.ico">
-    <link href="/style.css?v=1.932" type="text/css" rel="stylesheet">
+    <link href="/css/index.css?v=1.3" type="text/css" rel="stylesheet">
         <script>
         function buttonGoto(x){
 
           switch(x) {
+            case 'topper': window.location = "/blogs/mini.html#"+x
+            break;
             case 'adoption': window.open('https://mabsland.com/Adoption.html')
             break;
             case 'fidget':window.open('https://fidgetcube.dev/')
@@ -41,13 +43,11 @@
             break;
             case 'feed':window.open('/feed.xml')
             break;
+            case 'blog':window.location.href = "/blog.html"
+            break;
             default:window.open('https://sadgirlsclub.wtf/')
           }
-        }
-        function albumGoto(x) {
-          window.location = "/blogs/homestuckGoodSoFar.html#"+x
-        }
-          
+          }
       </script>
     </head>
     <body>
@@ -65,7 +65,7 @@
     </header>
 
    <div class = "navbar">
-        <nav>
+       <nav>
        
           <li> <a href="/index.html">home</a></li>
            <li><span>|</span></li>
@@ -81,14 +81,17 @@
           <li><span>|</span></li>
           <li><a href="/aboutme.html">about me</a></li>
         </nav>  
+
     </div> 
 
     <div class = "mainflex">
-<div class = "leftPanel">
+
+      <div class = "leftPanel">
            <ul><!--
         <li> <a href = "https://google.com"> <p>RSS</p></a></li>
         <li><a href = "https://google.com"> <p>Site Map</p> </a></li>
         <li><a href = "https://google.com"> <p>Categories</p></a> </li>
+        <li><a href = "https://google.com"> <p>Latest Update</p> </a> </li>
            -->
       </ul>
      
@@ -110,7 +113,7 @@
          <div onclick="buttonGoto('cyber')">    <img class = box88 src = "/art/global/88x31/ralseismokingadart.gif"> </div>
         </div>
         
-        <h3> Currently Reading:</h3>
+         <h3> Currently Reading:</h3>
         <p id = readTitle> Homestuck (~50%)</p>
         <p id = readTitle> The Devils (~40%)</p>
 
@@ -119,29 +122,77 @@
         <h4> Updated:</h4>
         <p> March 19th, 2026</p>
       </div>
+     
+<!--mini template
+<div class = miniGrid>
+<div class = minimain> <p> 
 
+</p> </div>
+<div class = minidate> <p> </p></div>
+<div class = tags> <p> </p> </div>
+</div>  
+<div class = topper onclick ="buttonGoto('topper')"> Back to top!</div>
+-->
 
-      
         <div class = "mainPanel">
-            <h2> Homestuck Has Been Good So Far, Actually
-            <h3> Posted October 31st, 2025</h3>
-          <p class = post>Yes so there's Reading Counter on this site, Yes i'm currently reading homestuck!<br><br>
+          <div class = buttonswaps>
+            <button onclick = "buttonGoto('blog')" style = "background-color: pink; color:darkmagenta">full blogs!</button>
+          </div>
+          <p>Top Blog is Most Recent, Bottom blog will be the Oldest. <br></p>
 
-When I'm done reading homestuck it'll probably be a mainstay reading counter, i wanna read more ! (That'll probably be another blog at one point...) <br><br>
 
-Right now i'm around 50% of the way done with homestuck, page wise. i'm probably a lot less if you account for the amount of flash games that show up much more frequently and for longer in the newer pages compared to the older ones, but it's still a nice marker of where i'm at! <br><br>
+  
 
-Something i didn't realize I would be giving praise for though, is the writing and story so far. It's so nice to see everything move together, like setting up the 4 way combo (Where making this happen) cliffhanger into resolution, the music of course is a banger (thank you toby 'don't call me radiation' fox and the other artists), and (for the most part) the dialogue and characterizations. There are a few.... Hussieisms, as i like to call it (which  I'm not sure is the right phrase cause i only just used it now but we're sticking with it) that stick out like a sore thumb, but genuinely the writing and story has kept me 'One more page'ing  for hours on end. <br><br>
 
-I never finished homestuck in it's hayday, getting to the beginning of act 6 before it slipped from my  hands for another obsession back in like 2014, but even then i always thought people who skipped the first 4 acts were missing out on what's going on . Even though 10 years passsed in the way 10 years do, I still keep that sentiment, because wow are so many things set up in the first 4 acts, it's absolutely insane how much you'd miss out. <br><br>
+          <div class = miniGrid>
+          <div class = minimain> <p> Please please keep Cuba in your thoughts and prayers. It's absolutely devastating and makes me so frustrated that the US has embargoed them for so long and now not letting them have any energy for the island or its citizens. <br></br>
+           Seeing what Cuba has done despite the US's boot on its neck gives me so much hope and the fact that other countries have not retaliated harder against the US makes me sick. Capitalism is a poison that runs down their rivers.</p> </div>
+           <div class = minidate> <p> March 19th, 2026</p></div>
+          <div class = tags> 
+           <p> #fuckUS #capitalism&colonialism</p>
+          </div>
+          </div>
+          <div class = topper onclick ="buttonGoto('topper')"> Back to top!</div>
 
-It might either just be a ... vizieism, or maybe a (bad) decision made for the trailer, but having John curse so much felt super off. He's not one to curse he's one to hehe and be a dumbass with an embodiment of hope, and though i liked how nice they kept to the art style, and moving the pesterlogs to calls (though I wonder how that's gonna work when we're in the part of not knowing who the trolls are), i didn't like dave's attitude, he's much more chillax than that whilst being super ironic, cause his personality is bound by the layers he wraps himself in. a fuckin irony burrito and he's the main filling. If he's still that outgoing the entire time, i do fear when we see times of going between dave and karkat. <br><br>
+          <div class = miniGrid>
+          <div class = minimain> <p> 
+          Yeah I know the 'Currently Reading' Hasn't been updated in months, I've been busy with studying network+ and playing deadlock if i'm being honest. <br></br> 
+          I have been missing homestuck tho ngl so hopefully getting back to that soon.<br></br> ALSO wow deadlock is so fun thank you valve if you wanna see me you better meet me in Manhattan -- I'm Emissary now if you can believe it!
+          </p> </div>
+          <div class = minidate> <p>March 19th, 2026 </p></div>
+          <div class = tags> <p>#forfun #updates </p> </div>
+          </div>
+          <div class = topper onclick ="buttonGoto('topper')"> Back to top!</div>
 
-Overall though, i'm excited to keep delving into this project and reading, i hope the animation actually goes well. <br><br> </p>
 
-<a target = "_blank" href="https://www.youtube.com/watch?v=jrhTB2Sij8c"> You can't fight the homestuck! </a>
-<br><br></p>
-          <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+          <div class = miniGrid>
+            <div class = minimain><p> DLSS 5 is actually such a disgrace to any artist in this industry. It's those 'this character (mainly a woman cause lets be real misogyny strikes hard with these AI clowns) looks bad, so I used AI to make her look better' bullshit.
+              <br></br> I'm not surprised, but the fact that NVIDIA takes pride in this project should let you know they are rotten and don't see games as art.</p> </div>
+            <div class = minidate> <p>March 19th, 2026</p></div>
+            <div class = tags>
+              <p>#futureblog #tech #ai </p>
+            </div>
+          </div>
+            <div class = topper onclick ="buttonGoto('topper')"> Back to top!</div>
+
+          <div class = miniGrid>
+            <div class = minimain>
+            <p> Will be making reviews out of the games seen in the <a href = "https://thatsvnclub.neocities.org/" target="_blank">Evil Queerotica Bundle</a>, I've already gone through</p>
+            <ul>
+              <li> EASYxSHOT</li>
+              <li> GIRL'S MONACHOPSIS</li>
+              <li> DIVINE DESPAIR DEVIANCE</li>
+              <li> HEATWAVE</li>
+              <li> GIRL'S SYMBIOSIS</li>
+              <li> FAITHLESS//FLAGELLENT</li>
+            </ul>
+           <p> and wowee are they some toxic yuri! I'll probably make a lil page with heads up because these are NSFW but wow is it worth! <br></br>
+            I've enjoyed all of them so far but if you need a quick 3 recs to point you in the right direction, i think girls symbiosis might be the one i can generally prescribe to everyone, with faithless//flagellent if you're going for toxicity that makes you hurl and either divine despair deviance or heatwave if you want a longer one to really sink your teeth into. </p> </div>
+           <div class = minidate> <p>March 19th, 2026</p></div>
+           <div class = tags> <p> #futureblog #forfun #yuri</div>
+          </div>
+            <div class = topper onclick ="buttonGoto('topper')"> Back to top!</div>
+
         </div>
 <!--
         <div class = "rightPanel">
@@ -157,7 +208,7 @@ Overall though, i'm excited to keep delving into this project and reading, i hop
       </div>
       </div>
          <div class = "webring"> <!-- empty for now but for when i join-->
-          
+          <p></p>
       </div>
     </div>
 

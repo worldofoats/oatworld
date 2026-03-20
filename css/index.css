@@ -1,131 +1,303 @@
-nav {
-  
-  /* width: 1160px; */
-  /* width: 1040px; */
-  margin: 0px 20px 20px 20px;
-  padding: 10px 10px;
-  
-  max-height:32px;
-  height:32px;
 
-  font-family: alagard;
-  font-size: 32px;
-
-  
-  text-align: center;
-  /* background-image: url(images/backgrounds/movement.gif); 
-  background-blend-mode: color-burn;
-  background-color: var(--secondary); */
+.intheheader {
+    height: 150px;
+    align-content: center;
+    text-align: center;
 }
 
 
 
-.nav {
-  margin-left: 0px;
-  padding: 0;
-
-  align-content: center;
-
-
-
-}
-.nav li {
-  display:inline-block;
-
- /* padding-left:28px;
-padding-right:28px; */
-}
-.nav li a {
-  color: var(--primary);
-  text-decoration: none;
-}
-
-.nav-dark {
-  filter: brightness(70%);
-}
-
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    display: inline-block;
-  }
-
-
-.row{
-  height: 150;
-  vertical-align: middle;
-  text-align: center;
-  align-self: center;
-  align-content: center;
-  
-}
-.row h1{
-  align-self: center;
-}
-
-.bigBox {
-width: 100%;
-min-height: 100%;
-
-margin: 55px 0px 0px 0px;
-
-border: dotted;
-align-self:center;
-}
-
-.leftPanel {
-  display: inline-block;
-
-  width: 10%;
-  height: 90%;
-  
-  margin: 25px;
-  padding: 25px;
-  
-  border: dotted;
-}
-
-.mainPanel {
-display: inline-block;
-
-width: 60%;
-height: 90%;
-
-margin: 25px;
-padding: 25px;
-
-
-border: dotted;
-}
-
-.rightPanel {
-display: inline-block;
-
-width: 10%;
-height: 90%;
-
-margin: 25px;
-padding: 25px;
-
-border: dotted;
-}
 
 body {
-    background-color: #401e6a;
+    background-color: #1e1138;
     color: #eee;
+    height: 100%;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
   }
 
-  @media screen and (max-width: 800px){
-    .nav{
-      flex-direction: column;
-    }
-  }
 
-  /*To do : make the navbar instead hust a div class with lots of links?
-   and turn the main box into a flexbox?
-   Debating how I want mobile to look
+.navbar {
+    justify-content: center;
+    display: flex;
+
+}
+
+nav {
+    background-color: pink;
+    border: solid;
+    border-radius: 5px;
+    border-color: pink;
+    margin-bottom: 25px;
+  
+}
+button {
+    width: 88px;
+    height:31px;
+    color:#1e1138;
+
+}
+.navbar li {
+    display: inline;
+    color: darkmagenta;
+    
+}
+.navbar li a {
+    text-align: center;
+    padding:   10px;
+    text-decoration: none;
+   
+
+}
+
+.navbar a {
+    color: darkmagenta;
+}
+
+.buttonswaps button {
+    border:none;
+    cursor:pointer;
+    border-radius: 25px;
+    
+
+}
+.mainflex {
+display: flex;
+flex-direction: row;
+width: 100%;
+min-height: 100%;
+align-self: center;
+
+border: solid;
+justify-content:left;
+justify-items:left;
+word-wrap:break-word;
+
+
+}
+
+
+
+.boxof88x31 {
+    display:grid;
+   grid-template-columns: auto auto;
+    /*margin-top: 500;
+    margin-left:-130px;*/
+    align-self:center;
+    width:176px;
+    margin: 12px;
+    
+}
+.boxof88x31 div{
+    height:31px;
+    width:88px;
+}
+.box88 {
+    width: 88px;
+    height: 31px;
+    cursor:pointer; 
+}
+.leftPanel {
+    background-color: #401e6a;
+    margin: 10px;
+    justify-items: center;
+    min-height: 100%;
+    width: 200px;
+    border: dotted;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.leftPanel #readTitle {
+    justify-content: center;
+}
+.leftPanel a {
+    color: wheat;
+}
+.mainPanel {
+    background-color: #401e6a;
+    margin: 10px;
+    padding-left: 10px;
+    min-height: 100%;
+    width: calc(100% - 280px);
+    border: dotted;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+.mainPanel a {
+    color: wheat;
+}
+.mainPanel li:nth-child(odd) {
+    color: #dac5e0;
+}
+.mainPanel li:nth-child(even) {
+    color: #ddd2e0;
+}
+
+.testURL {
+    color: wheat;
+}
+.post {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.rightPanel {
+    margin: 10px;
+    text-align: justify;
+    display: inline-flex;
+    height: 100%;
+    width: 12%;
+    flex-grow:1;
+    border: dotted;
+}
+.bottomflex {
+    background-color: #401e6a;
+    display: flex;
+    flex-direction: column;
+}
+
+.blogGrid {
+    grid-template-columns: auto auto;
+    background-color: #1e1138;
+    margin: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+ }
+ .miniGrid {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    background-color: #1e1138;
+    margin: 10px;
+    padding:10px;
+    margin-top:20px;
+    margin-bottom: 20px;
+ }
+ .minimain {
+    grid-column: span 2;
+ }
+ .minidate p {
+    color: #d6a7e2
+ }
+.tags p {
+    color: #e2a7d2
+    ;
+}
+
+ .topper {
+    color:wheat;
+    text-decoration-line:underline;
+    cursor:pointer;
+ }
+ .albumsflex {
+    background-color: #1e1138;
+    justify-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    
+    
+ }
+ .albumsflex div {
+    margin: 5px;
+    cursor:pointer;
+ }
+ .albumsflex img {
+    width:60px;
+    height:60px;
+ }
+.albumGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #1e1138;
+    margin: 10px;
+    padding: 5px;
+    margin-top:20px;
+    margin-bottom: 20px;
+ }
+ .albumCover {
+    grid-row: span 4;
+ }
+ .albumCover img{
+    min-width: 30%;
+    max-width: 70%;
+    min-height: 30%;
+    max-height: 70%;
+    
+ }
+ 
+ .albumDesc {
+    grid-column: span 2;
+ }
+ .artofMe img {
+    width: 50%;
+    
+ }
+
+ .friendGrid {
+    display:grid;
+    grid-template-columns: auto auto; 
+    justify-content: center;
+    
+
+ }
+ .individualFriend {
+    background-color: #1e1138;
+    border: dotted;
+    margin: 5px;
+ }
+ 
+ .friendPhoto img {
+    max-width: 25%;
+    max-height: 25%;
+ }
+ .versionbox {
+    background-color: #1e1138;
+
+ }
+
+ @media only screen and (max-width: 600px) {
+    
+    .mainflex {
+        display:flexbox;
+        flex-direction: column-reverse;
+        width: 100%;
+        min-height: 100%;
+        align-self: center;
+        border: solid;
+        justify-content:left;
+        justify-items:left;
+    }
+    .mainPanel {
+        width: calc(100% - 50px);
+    }
+    .leftPanel {
+        width:95%;
+        min-width:90%;
+        max-width:100%;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+    }
+  
+ }/*
+ @media only screen and (min-width: 1400px) {
+    .mainflex {
+display: flex;
+flex-direction: row;
+width: 80%; 
+min-height: 100%;
+align-self: center;
+
+border: solid;
+justify-content:center;
+justify-items:center;
+justify-self: center;
+align-content: center;
+
+vertical-align:middle;
+word-wrap:break-word;
+    }
+}
+    */
