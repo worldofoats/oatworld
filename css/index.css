@@ -165,7 +165,9 @@ word-wrap:break-word;
 .itemPutIn img{
     width: 100%;    
 }
-
+.subheading {
+    color:#8e9ae2;
+}
 .miscGrid {
     grid-template-columns: auto auto;
     background-color: #1e1138;
@@ -267,13 +269,26 @@ word-wrap:break-word;
     border: dotted;
     margin: 5px;
  }
- 
+ .postDate {
+    color:#d6a7e2;
+ }
  .friendPhoto img {
     max-width: 25%;
     max-height: 25%;
  }
- .versionbox {
+ .miscbox {
     background-color: #1e1138;
+    color: cornsilk;
+ }
+
+ .clicknoColor {
+    cursor:pointer;
+    text-decoration: underline;
+ }
+ .clickColor {
+    cursor:pointer;
+    text-decoration: underline;
+    color:wheat;
 
  }
 
