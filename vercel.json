@@ -1,0 +1,6 @@
+{
+  "$schema": "https://www.oats.world/vercel.json",
+  "redirects": [
+    { "source": "/(.*)", "destination": "/404.html", "statusCode": 404 }
+  ]
+}
