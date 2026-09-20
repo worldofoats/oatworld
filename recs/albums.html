@@ -17,51 +17,8 @@
     <title>Album recommendations!</title>
     <link rel="icon" type="image/x-icon" href="/art/global/favicon.ico">
     <link href="/style.css?v=1.932" type="text/css" rel="stylesheet">
-        <script>
-        function buttonGoto(x){
-
-          switch(x) {
-            case 'adoption': window.open('https://mabsland.com/Adoption.html')
-            break;
-            case 'fidget':window.open('https://fidgetcube.dev/')
-            break;
-            case 'fuckai':window.open('https://88x31.datakra.sh/img/random/fuckai.gif')
-            break;
-            case 'gay':window.open('https://pillowfort.social/posts/1632320')
-            break;
-            case 'hrt':window.open('https://alyx.sh/posts/hrt-geocities-buttons/')
-            break;
-            case 'kate':window.open('https://88x31.kate.pet/')
-            break;
-            case 'hyena':window.open('https://hyenatown.nekoweb.org/')
-            break;
-            case 'cyber':window.open('https://cyber.dabamos.de/88x31/')
-            break;
-            case 'sgc':window.open('https://sadgirlsclub.wtf/')
-            break;
-            case 'feed':window.open('/feed.xml')
-            break;
-            default:window.open('https://sadgirlsclub.wtf/')
-          }
-        }
-
-        function albumGoto(x) {
-          window.location = "/recs/albums.html#"+x
-         //window.location = (""+window.location).replace(/#[A-Za-z0-9_]*$/,'')+"#myAnchor"
-         /* switch(x) {
-            case 'shelter': open('#shelter')
-            break;
-            case 'escape from blue marble':
-            break;
-            case 'eusexua': 
-            break;
-            case 'unicorns are real': 
-            break;
-            case 'constant companions': 
-            break; */
-          }
         
-      </script>
+        <script src = "/js/script.js"></script>
     </head>
     <body>
 
@@ -150,12 +107,12 @@
           <p>This is where I will show off all the media I think you should take a look at! <br>Though right now it will mainly be albums I think you should listen to! <br><br>click on an album cover to go directly to that rec! </p>
 
           <div class = albumsflex>
-            <div class = albumcov onclick ="albumGoto('shelter')"><img src = "/art/albums/Shelter.jpg"></div>
-            <div class = albumcov onclick ="albumGoto('escape-from-blue-marble')"><img src = "/art/albums/EscapeFromBlueMarble.png"> </div>
-            <div class = albumcov onclick ="albumGoto('jungle-witch')"><img src = "/art/albums/Jungle Witch.jpg"> </div>
-            <div class = albumcov onclick ="albumGoto('eusexua')"><img src = "/art/albums/eusexua.jpg"> </div>
-            <div class = albumcov onclick ="albumGoto('unicorns-are-real')"><img src = "/art/albums/UnicornsAreReal.png"> </div>
-            <div class = albumcov onclick ="albumGoto('constant-companions')"><img src = "/art/albums/ConstantCompanions.png"> </div>
+            <div class = albumcov onclick ="goTo('shelter')"><img src = "/art/albums/Shelter.jpg"></div>
+            <div class = albumcov onclick ="goTo('escape-from-blue-marble')"><img src = "/art/albums/EscapeFromBlueMarble.png"> </div>
+            <div class = albumcov onclick ="goTo('jungle-witch')"><img src = "/art/albums/Jungle Witch.jpg"> </div>
+            <div class = albumcov onclick ="goTo('eusexua')"><img src = "/art/albums/eusexua.jpg"> </div>
+            <div class = albumcov onclick ="goTo('unicorns-are-real')"><img src = "/art/albums/UnicornsAreReal.png"> </div>
+            <div class = albumcov onclick ="goTo('constant-companions')"><img src = "/art/albums/ConstantCompanions.png"> </div>
 
           </div>
 
@@ -172,7 +129,7 @@ Birdbrain was the chicken feed that led me into the coop of this album, also tha
  Jamie has a wonderful way of writing melodies in and out of each other, remixing them like leitmotifs to appear everywhere in this album and each song goes from a wonderful high to a devasting low, getting me to cry to songs like Clouddrop. It's an album of want, fame, desire, love, hopes, what it feels to want to be someone's other and seeing that want fall apart. All of these can and will hurt. You can become a shell of yourself or you can be a ray of hope and light with how you and your companions treat each other and treat yourselves (and the reality is, you will have been both by the end of the timeline).</p> </div>
           </div>          
 
-          <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+          <div class = topper onclick ="goTo('topper')"> Back to top!</div>
 
         <div class = albumGrid id = "unicorns-are-real">
 
@@ -186,7 +143,7 @@ Birdbrain was the chicken feed that led me into the coop of this album, also tha
 In the best way possible, it almost feels like a video game OST for a visual novel that would change my life -- not all chilltronic music has this quality so I don't want you to misunderstand this as 'chill = background = soundtrack for something' logic; this is a living breathing organism. There's a story to this album I always think about, and one that makes me go 'but what if i really did just see a unicorn while I'm out and about trailing'. There's many mystical things where we live and taking a path less traveled usually allows you to see them, but with this album on its much easier to look for them -- and I think if you go out on a barely-suitable-for-humans trail next time with this album on, I think you'll find your own unicorn too.</p> </div>
           </div>
 
-          <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+          <div class = topper onclick ="goTo('topper')"> Back to top!</div>
 
           <div class = albumGrid id = "eusexua">
             <div class = albumCover><img src = "/art/albums/eusexua.jpg"></div>
@@ -200,7 +157,7 @@ In the best way possible, it almost feels like a video game OST for a visual nov
             </p> </div>
           </div>
 
-        <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+        <div class = topper onclick ="goTo('topper')"> Back to top!</div>
 
 <div class = albumGrid id = 'jungle-witch'>
             <div class = albumCover><img src = "/art/albums/Jungle Witch.jpg"></div>
@@ -211,7 +168,7 @@ In the best way possible, it almost feels like a video game OST for a visual nov
             <div class = albumDesc> <p> This may be the epitome of 'jungle' to me. It is stuck in my head mercilessly, and i feel trapped in its atmospheric rhythm -- the witch herself has commanded me like a puppet on a string to 'unce unce  unce' my head to the rhythm and close my eyes to imagine its world. <br><br>There is never a bad day or a bad time for these digital vibrations to come to life and seranade my ears, and yet i haven't delved into much of vertigoaway's other projects as of yet, it's as though this one will keep me close and make sure i sing only its praises for all of time. Someone save me. </p> </div>
           </div>
 
-          <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+          <div class = topper onclick ="goTo('topper')"> Back to top!</div>
 
           <div class = albumGrid id = 'escape-from-blue-marble'>
             <div class = albumCover><img src = "/art/albums/EscapeFromBlueMarble.png"></div> 
@@ -224,7 +181,7 @@ With that being said however, I never listened to much of the album until very r
           </div>
         </div>
            
-        <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+        <div class = topper onclick ="goTo('topper')"> Back to top!</div>
 
           <div class = albumGrid id = 'shelter'>
             <div class = albumCover><img src = "/art/albums/Shelter.jpg"></div> 
@@ -235,7 +192,7 @@ With that being said however, I never listened to much of the album until very r
             <div class = albumDesc> <p>Alice Phoebe Lou Means a lot to me ever since listening to Paper Castles back in 2023, and this album always sends me back to a time of Requited love and sensitive losses.<br><br> It stilts me to a place outside of the typical timeline where i can see my past and future selves, and the love of the people around me and the pieces of me I gave away. I can feel the current warmth of my lover's embrace when I listen to Shine, the Pain of the past me when i used to Open My Door to anyone, the wisdom of my future self when i listen to My Girl.<br><br>
 Highly recommend, and i think you'll find yourself wanting to recommend this to others around you as well. </p> </div>
           </div>
-          <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
+          <div class = topper onclick ="goTo('topper')"> Back to top!</div>
 
           <!-- album template
           <div class = albumGrid>
