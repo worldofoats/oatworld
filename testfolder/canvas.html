@@ -102,8 +102,9 @@
 <div class = topper onclick ="albumGoto('topper')"> Back to top!</div>
 </div>-->
       
-        <div class = "mainPanel" id = "mainPanelArea">
-           
+        <div class = "mainPanel" id = "mainPanelArea" onloadstart = "grabState()">
+          <p onclick="grabState()"> loading, but if you still see this go ahead and just click the button below!</p>
+           <button onclick="grabState()", style = "background-color: darkmagenta; color:pink">Reload State</button>
     </div>
     <div class = "bottom flex">
       

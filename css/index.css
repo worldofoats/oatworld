@@ -60,6 +60,13 @@ button {
     
 
 }
+.navName {
+    cursor:pointer; 
+    text-align: center;
+    padding:   10px;
+    text-decoration: none;
+
+}
 .mainflex {
 display: flex;
 flex-direction: row;

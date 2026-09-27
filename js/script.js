@@ -1,4 +1,7 @@
 
+
+console.log('test 2');
+
 function buttonGoto(x){
 
           switch(x) {
@@ -57,10 +60,17 @@ function buttonGoto(x){
 
       // script.js  
 function loadHTML(x) {  
+  const container = document.getElementById('mainPanelArea');
+  filetoLoad = '/testfolder/'+x+'.html'
+  /*if (x == 'index') {
+    filetoLoad = '/index.html'
+
+  }
+  else{
     // Target div where content will be inserted  
     filetoLoad = '/testfolder/'+x+'.html'
-    const container = document.getElementById('mainPanelArea');  
- 
+  }
+    */
     // Fetch the external HTML file  
     fetch(filetoLoad)  
         .then(response => {  
@@ -74,7 +84,7 @@ function loadHTML(x) {
         .then(html => {  
             // Insert the HTML into the container  
             container.innerHTML = html;
-            history.pushState(null, "", x);
+            history.pushState(null, "", x+".html");
             //window.location.pathname = filetoLoad+"#"+x
             //window.location.pathname = filetoLoad
         })  
@@ -84,7 +94,46 @@ function loadHTML(x) {
         });  
 }  
 
+function loadPage(x) {  
+  loadcanvas = '/testfolder/canvas.html'
+  const container = document.getElementById('wholepage');
+  fetch(loadcanvas)  
+        .then(response => {  
+            // Check if the request succeeded (status 200-299)  
+            if (!response.ok) {  
+                throw new Error(`HTTP error! Status: ${response.status}`);  
+            }  
+            // Convert response to text (HTML string)  
+            return response.text();  
+        })  
+        .then(html => {  
+            // Insert the HTML into the container  
+            container.innerHTML = html;
+            history.pushState(null, "", x+".html");
+            //window.location.pathname = filetoLoad+"#"+x
+            //window.location.pathname = filetoLoad
+        })  
+        .catch(error => {  
+            // Handle errors (e.g., file not found, network issues)  
+            container.innerHTML = `<p>Error loading content: ${error.message}</p>`;  
+        });  
+  console.log('done with load page!') ; 
+  //loadHTML(x)
+  console.log('done with html');
+  setTimeout(function() { grabState();},100);
+      }
+function grabState() {
+  
+   name = window.location.pathname;
+   console.log(name);
+   var partsName = name.substring(name.lastIndexOf('/')+1);
+   console.log(partsName);
+   var sendPart = partsName.split('.');
+   console.log(sendPart[0]);
+   loadHTML(sendPart[0]);
 
+
+}
 
 /*
 const hashes = new Map([
@@ -162,13 +211,13 @@ if (response.status == 404) {
     window.location = "";
   }
 }
-*/
-console.log(hash);
+
+
 new Response();
 
 const allowedURLs = ["blogofexpand"]
-
-
+console.log("test!")
+/*
 (() => {
   
   if (response.ok != true) {
@@ -186,12 +235,13 @@ const allowedURLs = ["blogofexpand"]
 
 
 
-/*
+
 (() => {
-    hash = window.location.hash;
-    if (hash != "") {
-     window.location = "/test.html";
-    loadHTML(hash);
-    }
+    console.log('test 2')
+    //hash = window.location.hash;
+    //if (hash != "") {
+     //window.location = "/test.html";
+   // loadHTML(hash);
+    
 })();
 */
