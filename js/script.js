@@ -110,6 +110,8 @@ function loadPage(x) {
             // Insert the HTML into the container  
             container.innerHTML = html;
             history.pushState(null, "", x+".html");
+            loadHTML(x);
+            //container.innerHTML.onload = function(){grabState()};
             //window.location.pathname = filetoLoad+"#"+x
             //window.location.pathname = filetoLoad
         })  
@@ -120,7 +122,7 @@ function loadPage(x) {
   console.log('done with load page!') ; 
   //loadHTML(x)
   console.log('done with html');
-  setTimeout(function() { grabState();},100);
+  //setTimeout(function() { grabState();},100);
       }
 function grabState() {
   
