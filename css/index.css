@@ -23,10 +23,10 @@ body {
 }
 
 nav {
-    background-color: pink;
+    background-color: pink !important;
     border: solid;
     border-radius: 5px;
-    border-color: pink;
+    border-color: pink !important;
     margin-bottom: 25px;
   
 }
@@ -131,6 +131,11 @@ word-wrap:break-word;
     text-align: center;
     padding: 15px;
 }
+.blogTitle span {
+    color: wheat;
+    cursor: pointer;
+    text-decoration: underline;
+}
 .mainPanel a {
     color: wheat;
 }
@@ -184,7 +189,9 @@ word-wrap:break-word;
     margin-top:20px;
     margin-bottom: 20px;
  }
-
+.spacedout li {
+    margin: 10px 5px 10px 5px;
+}
 .blogGrid {
     grid-template-columns: auto auto;
     background-color: #1e1138;
@@ -323,6 +330,9 @@ word-wrap:break-word;
         justify-self: center;
     }
   
+
+
+
  }/*
  @media only screen and (min-width: 1400px) {
     .mainflex {

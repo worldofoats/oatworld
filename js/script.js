@@ -1,7 +1,16 @@
-
-
-console.log('test 2');
-
+const titles = new Map([
+    ["friends", "Websites of my friends!"],
+    ["aboutme", "About me! :3"],
+    ["index", "Welcome to my World! :3"],
+    ["blog", "Blog Directory!"],
+    ["recs/albums", "Album Recommendations!"],
+    ["blogs/mini", "Mini Blogs"],
+    ["blogs/expandweb", "Expand the Web, Make your Own Space!"],
+    ["blogs/goodfriends", "Good Friends Don't Give Their Friends Info to Corporations"],
+    ["blogs/punktactics1", "Finding Causes and Communities!"],
+    ["blogs/starguide", "Oats' Guide to the stars!"],
+    ["blogs/homestuckGoodSoFar", "Homestuck Has Been Good So Far, Actually!"],
+]);
 function buttonGoto(x){
 
           switch(x) {
@@ -59,9 +68,11 @@ function buttonGoto(x){
 
 
       // script.js  
-function loadHTML(x) {  
+function loadHTML(page) {  
+  console.log(page);
   const container = document.getElementById('mainPanelArea');
-  filetoLoad = '/testfolder/'+x+'.html'
+  filetoLoad = '/actualhtml/'+page+'.html';
+  console.log(filetoLoad);
   /*if (x == 'index') {
     filetoLoad = '/index.html'
 
@@ -83,9 +94,12 @@ function loadHTML(x) {
         })  
         .then(html => {  
             // Insert the HTML into the container  
+            //window.pathname = "/";
             container.innerHTML = html;
-            history.pushState(null, "", x+".html");
-            //window.location.pathname = filetoLoad+"#"+x
+            history.replaceState(null, "", "/"+page+".html");
+            const webtitle = document.getElementById('webTitle');
+            const label = titles.get(page);
+            webtitle.innerText = label;
             //window.location.pathname = filetoLoad
         })  
         .catch(error => {  
@@ -94,8 +108,8 @@ function loadHTML(x) {
         });  
 }  
 
-function loadPage(x) {  
-  loadcanvas = '/testfolder/canvas.html'
+function loadPage(page) {  
+  loadcanvas = '/actualhtml/canvas.html'
   const container = document.getElementById('wholepage');
   fetch(loadcanvas)  
         .then(response => {  
@@ -108,9 +122,10 @@ function loadPage(x) {
         })  
         .then(html => {  
             // Insert the HTML into the container  
+            //window.location.pathname = filetoLoad+"#"+x
             container.innerHTML = html;
-            history.pushState(null, "", x+".html");
-            loadHTML(x);
+            history.pushState(null, "", "/"+page+".html");
+            loadHTML(page);
             //container.innerHTML.onload = function(){grabState()};
             //window.location.pathname = filetoLoad+"#"+x
             //window.location.pathname = filetoLoad
@@ -138,18 +153,19 @@ function grabState() {
 }
 
 /*
-const hashes = new Map([
-    ["blogofexpand", "/"],
-    ["friends", "tab2"],
-    ["aboutme", "tab3"],
-    ["album-recommendations", "tab3"],
-    ["video-recommendations", "tab3"],
-    ["blogs-full", "tab3"],
-    ["blogs-mini", "tab3"],
-    ["blogs-expandweb", "tab3"],
-    ["blogs-goodfriends", "tab3"],
-    ["blogs-punktactics1", "tab3"],
-    ["blogs-starguide", "tab3"],
+const titles = new Map([
+    ["friends", "Websites of my friends!"],
+    ["aboutme", "About me! :3"],
+    ["index", "Welcome to my world!"],
+    ["blog", "Blog Directory!"],
+    ["recs/albums", "Album Recommendations!"],
+    ["blogs/mini", "Mini Blogs"],
+    ["blogs/expandweb", "Expand the Web, Make your Own Space!"],
+    ["blogs/goodfriends", "Good Friends Don't Give Their Friends Info to Corporations"],
+    ["blogs/punktactics1", "Finding Causes and Communities!"],
+    ["blogs/starguide", "Oats' Guide to the stars!"],
+    ["blogs/homestuckGoodSoFar", "Homestuck Has Been Good So Far, Actually!"],
+
 ]);
 
 
