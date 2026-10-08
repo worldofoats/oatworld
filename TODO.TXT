@@ -1,0 +1,24 @@
+ 0.8
+ - refactor backend code so there are template files and still preserve url usage
+ - #referencers don't work when copy pasting link
+find a way to make em work so i can link people to specific reviews
+
+ - make a video recommendations, add sweet trip as an album recommendations
+ - write more mini's about getting this process to work
+ - preferably one more big blog (punk tactics 2??)
+
+0.9
+ - Accessibility! I want to make sure everything works as it should so TTS is easy
+ - should be able to move around the website with just a keyboard
+ - Follow other accessibility web rules
+ - Cleaning up backend html and the script.js file, make it all clean and neat
+ - at least two more blogs (death by policy, punk tactics 3?)
+ - more minis, and game recs now!
+ - add a robots.txt
+
+1.0
+- Adding search, tags, and most importantly: art
+- animated star background, gradient background, a proper 88x31, etc
+- being added to the webring
+- Going back to previous blogs and rewriting/ reformatting to be better
+- even more minis and recs!

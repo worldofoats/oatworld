@@ -252,18 +252,36 @@ word-wrap:break-word;
     margin-top:20px;
     margin-bottom: 20px;
  }
+ .recGrid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    background-color: #1e1138;
+    margin-top:20px;
+    margin-bottom: 20px;
+
+ }
+ .videoFrame iframe{
+    max-width:80%;
+    min-height: 20%;
+   
+ }
+ .recName {}
+ .recArtist {}
+.videoFrame {
+    grid-row: span 2;
+ }
+
  .albumCover {
     grid-row: span 4;
+    
  }
  .albumCover img{
-    min-width: 30%;
-    max-width: 70%;
-    min-height: 30%;
-    max-height: 70%;
+    max-width:80%;
+    min-height: 20%;
     
  }
  
- .albumDesc {
+ .recDesc {
     grid-column: span 2;
  }
  .artofMe img {
