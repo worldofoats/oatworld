@@ -4,6 +4,7 @@ const titles = new Map([
     ["index", "Welcome to my World! :3"],
     ["blog", "Blog Directory!"],
     ["recs/albums", "Album Recommendations!"],
+    ["recs/videos", "Video Recommendations!"],
     ["blogs/mini", "Mini Blogs"],
     ["blogs/expandweb", "Expand the Web, Make your Own Space!"],
     ["blogs/goodfriends", "Good Friends Don't Give Their Friends Info to Corporations"],
